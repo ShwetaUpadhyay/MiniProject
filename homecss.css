@@ -1,0 +1,72 @@
+@font-face {
+font-family: "homizio";
+src: url("");
+src: 
+url("css/fonts/Harabara.woff") format("woff"),
+url("./asset/fonts/regular.otf") format("opentype"),
+url("css/fonts/Harabara.svg#filename") format("svg");
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family:homizio;
+}
+
+header{
+	background-color: #222531;
+	height: 10vh;
+	background-position: center;
+	background-size: cover;
+}
+
+ul{
+	font-family:homizio;
+	float: right;
+	list-style-type: none;
+	margin-top: 15px;
+}
+
+ul li{
+	display: inline;
+}
+
+ul li a{
+  text-decoration: none;
+  color: green;
+  padding: 5px 20px;
+  border: 1px solid transparent;
+  transition: 0.6s ease;
+}
+
+ul li.active a{
+  background-color: lemonchiffon;
+  color: maroon;
+ }
+
+ul li a:hover{
+  background-color: khaki;
+  color: #000;
+}
+
+.tophead{
+	font-family:homizio;
+	max-width: 1200px;
+	margin: auto;
+}
+
+.category1{
+	font-family:homizio;
+	background-color: yellow;
+	height: 8vh;	
+	background-size: cover;
+	background-position: center;
+}
+
+
+.content{
+	background-size: cover;
+	background-position: center;
+	background-color: #222531;
+	height: 800px;
+}

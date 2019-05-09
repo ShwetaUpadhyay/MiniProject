@@ -1,0 +1,102 @@
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css";
+
+@font-face {
+font-family: "homizio";
+src: url("");
+src: 
+url("css/fonts/Harabara.woff") format("woff"),
+url("./asset/fonts/regular.otf") format("opentype"),
+url("css/fonts/Harabara.svg#filename") format("svg");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #222531;
+}
+
+header{
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+}
+
+.main{
+  max-width: 1200px;
+  margin: auto;
+}
+
+ul{
+  font-family:homizio;
+  float:right;
+  list-style-type: none;
+  margin-top: 25px;
+}
+
+ul li{
+  font-family:homizio;
+  display: inline-block;
+}
+
+ul li a{
+  text-decoration: none;
+  color: #fff;
+  padding: 5px 20px;
+  border: 1px solid transparent;
+  transition: 0.6s ease;
+}
+
+ul li a:hover{
+  background-color: khaki;
+  color: #000;
+}
+ul li.active a{
+  background-color: lemonchiffon;
+  color: red;
+}
+
+.title{
+  font-family:homizio;
+  position: absolute;
+  top: 40%;
+  left: 25%;
+  transform: translate(-50%,-50%);
+}
+
+.title h1{
+    color: firebrick;
+    font-size: 70px;
+    font-style: oblique;
+}
+
+.title p{
+  color:khaki;
+  font-size: 20px;
+  margin-top: 0px;
+}
+
+.searchbox{
+  top: 65%;
+  left: 7%;
+  position: absolute;
+  width: 20%;
+  overflow: hidden;
+  font-size :20px;
+  padding: 8px 0;
+  margin: 8px 0;
+  border-bottom: 1px solid;
+}
+.searchbox i{
+  width: 26px;
+  float: left;
+  text-align: center;
+}
+input{
+  border: none;
+  outline: none;
+  background :none;
+  color: white;
+  font-size:18px;
+  float: left;
+  margin: 0 10px; 
+}
