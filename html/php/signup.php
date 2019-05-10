@@ -18,7 +18,7 @@
 
 	echo "$uname and $password";
 
-	$query="select * from register where username= '$uname' && password='$password' ";
+	$query="select * from user where username= '$uname' && password='$password' ";
 	$result=mysqli_query($con,$query);
 
 	$num=mysqli_num_rows($result);
@@ -28,7 +28,7 @@
 	}
 	else{
 		echo "Else part";
-		$query2=" insert into register(firstname,lastname,username,dob,city,password)values('$fname','$lname',
+		$query2=" insert into user(firstname,lastname,username,dob,city,password)values('$fname','$lname',
 		'$uname','$dob','$city','$password')";
 			mysqli_query($con,$query2);
 			echo "\n$query2";

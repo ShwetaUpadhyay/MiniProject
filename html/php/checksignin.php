@@ -11,19 +11,17 @@
 	$uname=$_POST['uname'];
 	$password=$_POST['password'];
 
-
-	$query="select * from register where username= '$uname' && password='$password' ";
+	$query="select * from user where username= '$uname' && password='$password'";
 	$result=mysqli_query($con,$query);
-
 	$num=mysqli_num_rows($result);
 
 	if($num==1){
 		$_SESSION['username']=$uname;
-		header('location:home.html');
+		$_SESSION['logged'] = true;
+		header('location:../../index.php');
 	}
 	else{
 		echo "access denied";
-		header('location:login.html');
+		header('location:../signin.html');
 	}
-
  ?>
