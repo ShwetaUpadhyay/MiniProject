@@ -11,41 +11,6 @@ body {
   background-color: #222531;
 }
 
-.main {
-  max-width: 1200px;
-  margin: auto;
-}
-
-ul {
-  font-family: homizio;
-  float: right;
-  list-style-type: none;
-  margin-top: 25px;
-}
-
-ul li {
-  font-family: homizio;
-  display: inline-block;
-}
-
-ul li a {
-  text-decoration: none;
-  color: #fff;
-  padding: 5px 20px;
-  border: 1px solid transparent;
-  transition: 0.6s ease;
-}
-
-ul li a:hover {
-  background-color: khaki;
-  color: #000;
-}
-
-ul li.active a {
-  background-color: lemonchiffon;
-  color: red;
-}
-
 .login-box {
   width: 280px;
   position: absolute;

@@ -1,14 +1,3 @@
-@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css";
-
-@font-face {
-  font-family: "homizio";
-  src: url("");
-  src:
-    url("css/fonts/Harabara.woff") format("woff"),
-    url("./asset/fonts/regular.otf") format("opentype"),
-    url("css/fonts/Harabara.svg#filename") format("svg");
-}
-
 body, html {
   margin: 0;
   padding: 0;
@@ -16,48 +5,7 @@ body, html {
 }
 
 * {
-  font-family: candara;
-}
-
-header {
-  background-size: cover;
-  height: 100vh;
-  background-position: center;
-}
-
-.main {
-  max-width: 1200px;
-  margin: auto;
-}
-
-ul {
-  font-family: homizio;
-  float: right;
-  list-style-type: none;
-  margin-top: 25px;
-}
-
-ul li {
-  font-family: homizio;
-  display: inline-block;
-}
-
-ul li a {
-  text-decoration: none;
-  color: #fff;
-  padding: 5px 20px;
-  border: 1px solid transparent;
-  transition: 0.6s ease;
-}
-
-ul li a:hover {
-  background-color: khaki;
-  color: #000;
-}
-
-ul li.active a {
-  background-color: lemonchiffon;
-  color: red;
+    font-family: candara;
 }
 
 .title {

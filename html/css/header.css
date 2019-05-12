@@ -1,0 +1,36 @@
+header {
+  background-size: cover;
+  background-position: center;
+  min-width: 1200px;
+  margin: auto;
+  height: 30px;
+}
+ul {
+  float: right;
+  list-style-type: none;
+  margin-top: 10px;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 5px 20px;
+  border: 1px solid transparent;
+  transition: 0.6s ease;
+}
+
+ul li a:hover {
+  background-color: khaki;
+  border-radius: 3px;
+  color: #000;
+}
+
+.active-header a {
+  background-color: lemonchiffon;
+  border-radius: 3px;
+  color: red;
+}

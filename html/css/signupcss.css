@@ -5,13 +5,17 @@
 html, body {
   color: #333;
   background-color: #222531;
+  margin: 0px;
 }
 
 .sign-up-form {
   width: 500px;
   margin: auto;
-  margin-top: 200px;
   background-color: #222531;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
 }
 
 .row {

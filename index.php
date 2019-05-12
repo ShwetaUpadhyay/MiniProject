@@ -7,26 +7,25 @@ session_start();
 <head>
   <title> mini project</title>
   <link rel="stylesheet" href="html/css/indexcss.css">
+  <link rel="stylesheet" href="html/css/header.css">
 </head>
 
 <body>
-  <header>
-    <div class="main">
+    <header>
       <ul>
-        <li class="active"><a href="index.html">Home</a></li>
+        <li class="active-header"><a href="index.php">Home</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Help</a></li>
         <?php
-            if(isset($_SESSION['logged']) && $_SESSION['logged'] == true){
-                echo "<li><a href=\"#\">Logout ", $_SESSION['username'], "</a></li>";
-            } else {
-                echo "<li><a href=\"html/signin.html\">Sign In</a></li>";
-                echo "<li><a href=\"html/signup.html\">Create an account</a></li>";
-            }
-            ?>
+        if(isset($_SESSION['logged']) && $_SESSION['logged'] == true){
+            echo "<li><a href=\"html/php/signout.php\">Sign out ", $_SESSION['username'], "</a></li>";
+        } else {
+            echo "<li><a href=\"html/signin.html\">Sign In</a></li>";
+            echo "<li><a href=\"html/signup.html\">Create an Account</a></li>";
+        }
+        ?>
       </ul>
-    </div>
-</header>
+    </header>
 
     <div class="category1">
       <ul>
